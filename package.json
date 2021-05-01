@@ -1,6 +1,6 @@
 {
   "name": "create-roz",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Code generator",
   "main": "dist/index.js",
   "bin": {
