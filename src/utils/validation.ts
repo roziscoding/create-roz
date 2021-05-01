@@ -1,0 +1,1 @@
+export const required = (value: string) => Boolean(value) || 'Required field'
