@@ -50,7 +50,7 @@ const command: GluegunCommand = {
 
     const finalProps = {
       ...props,
-      keywords: props.keywords?.split(',').map(k => k.trim()).filter(Boolean) ?? []
+      keywords: JSON.stringify(props.keywords?.split(',').map(k => k.trim()).filter(Boolean) ?? [])
     }
 
     let spinner = toolbox.print.spin({
