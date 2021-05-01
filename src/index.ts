@@ -1,12 +1,15 @@
 #!/usr/bin/env node
 
-import { build } from 'gluegun'
+import { build, GluegunToolbox } from 'gluegun'
 
 const cli = build('roz')
   .src(__dirname)
   .help()
   .version()
-  // .checkForUpdates(100)
+  .defaultCommand((t: GluegunToolbox) => {
+    t.print.error('You must choose a project type.')
+  })
+  .checkForUpdates(100)
   .create()
 
 cli.run().catch(console.error)
