@@ -3,6 +3,9 @@
   "version": "1.0.1",
   "description": "Code generator",
   "main": "dist/index.js",
+  "bin": {
+    "create-roz": "dist/index.js"
+  },
   "scripts": {
     "test": "mocha",
     "lint": "eslint .",
