@@ -2,6 +2,7 @@
   "name": "create-roz",
   "version": "1.0.0",
   "description": "Code generator",
+  "main": "dist/index.js",
   "scripts": {
     "test": "mocha",
     "lint": "eslint .",
